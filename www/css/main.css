@@ -34,3 +34,7 @@ body {
 .white {
     border: 1px solid white;
 }
+
+.gray {
+    border: 1px solid gray;
+}
