@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 class APP extends Component {
     constructor( props ) {
-        this.super( props );
+        super( props );
         this.state = {
             item: ''
         };
