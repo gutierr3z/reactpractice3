@@ -1,13 +1,13 @@
 {
   "name": "reactpractice3",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Project\r ---\r Welcome.",
   "main": "app.js",
   "scripts": {
-  "compile": "webpack",
-  "start": "node server.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+    "compile": "webpack",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,5 +21,13 @@
     "react-dom": "^15.6.1",
     "webpack": "^3.5.5",
     "webpack-dev-middleware": "^1.12.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gutierr3z/reactpractice3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gutierr3z/reactpractice3/issues"
+  },
+  "homepage": "https://github.com/gutierr3z/reactpractice3#readme"
 }
