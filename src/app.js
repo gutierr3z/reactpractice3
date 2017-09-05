@@ -5,7 +5,7 @@ class APP extends Component {
     constructor( props ) {
         this.super( props );
         this.state = {
-
+            item: ''
         };
     };
     render() {
