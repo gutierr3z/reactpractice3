@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 class APP extends Component {
-    constructor( props ) {
-        super( props );
-        this.state = {
 
-        };
+    constructor( props ) {
+
+        super( props );
+
+        this.state = {};
     };
 
     render() {
-        return <h1>hello there</h1>;
+
+        return <h1>hi hi hi hi</h1>;
     };
 };
 
@@ -23,15 +25,12 @@ ReactDOM.render( <APP />, document.querySelector( '#main' ) );
 // class APP extends Component {
 //     constructor( props ) {
 //         super( props );
-//         this.state = {
-
-//         };
+//         this.state = {};
 //     };
 
 //     render() {
-//         return <h1>yay!</h1>
+//         return <h1>hello there</h1>;
 //     };
 // };
 
 // ReactDOM.render( <APP />, document.querySelector( '#main' ) );
-
