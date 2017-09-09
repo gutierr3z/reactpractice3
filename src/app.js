@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import SubPage from './Components/sub1';
+
 class APP extends Component {
 
     constructor( props ) {
 
         super( props );
 
-        this.state = {};
+        this.state = {
+            list: [ 'one', 'two', 'three' ]
+        };
     };
 
     render() {
 
-        return <h3>Plants</h3>;
+        return (
+            <div>
+                <h1>PLANTS</h1>
+                <SubPage list = { this.state.list } />
+            </div>
+        );
     };
 };
 
