@@ -12,25 +12,28 @@ class APP extends Component {
             list: [ 'un', 'deux', 'trois' ],
             theTxt: 'ssss'
         };
+        // this.myFunc( this );
     };
 
-    theFunc( x ) {
+    myFunc() {
         // var echoIt = document.querySelector( '#thetext' );
         // echoIt.value = 'hello';
         // this.setState( { theTxt: x } );
-        console.log( 'clicked', x );
+        // var that = x;
+
+        // return function() {
+            // document.querySelector( '#thetext' ).innerHTML = 'asdfasdf';
+            // console.log( 'clicked', that );
+        // };
     };
 
     render() {
-        
-        // this.setState( { theTxt: 'hello' } );
-        // console.log( this.state.theTxt );
         return (
             <div>
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
                 <div id="test">X</div>
-                <SubPage theList = { this.state.list } theFunc = { this.theFunc } />
-                <SubPage2 onTheTxtChange = { theTxt => this.setState( { theTxt : theTxt } ) } />
+                <SubPage theList = { this.state.list } />
+                <SubPage2 />
             </div>
         );
     };
