@@ -7,7 +7,7 @@ class SubPage extends Component {
     constructor( props ) {
         super( props );
         this.state = {
-            theList: props.theList
+            theList: props.proList
         };
     };
 
@@ -17,7 +17,7 @@ class SubPage extends Component {
                 <h2>LEVEL TWO : { this.state.theList[1] } </h2>
                 <input type="text" id="ipt_one" />
                 <input id="btn_one" type="button" value="Press" onClick = { () => this.clickIt() } />
-                <SubSubPage XXX = { this.state.theList } />
+                <SubSubPage proXXX = { this.state.theList } />
             </div>
         );
     };

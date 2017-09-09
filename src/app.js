@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import SubPage from './Components/sub1';
 import SubPage2 from './Components/sub2';
-
+//--------------------------------------------------
 class APP extends Component {
 
     constructor( props ) {
@@ -19,11 +19,11 @@ class APP extends Component {
             <div>
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
                 <div id="test">X</div>
-                <SubPage theList = { this.state.list } />
+                <SubPage proList = { this.state.list } />
                 <SubPage2 />
             </div>
         );
     };
 };
-
+//--------------------------------------------------
 ReactDOM.render( <APP />, document.querySelector( '#main' ) );
