@@ -17,6 +17,7 @@ class APP extends Component {
         return (
             <div>
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
+                <div id="test">X</div>
                 <SubPage theList = { this.state.list } />
                 <SubPage2 />
             </div>

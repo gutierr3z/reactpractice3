@@ -3,8 +3,10 @@ import React from 'react';
 const SubPage2 = ( props ) => {
 
     return (
+        
         <div id="sub2txt">
-            sub 2 text
+            <h2>LEVEL TWO SUB2</h2>
+            <p id="the-text">sub 2 text</p>
         </div>
     );
 };

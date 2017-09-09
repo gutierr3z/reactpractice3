@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import SubSubPage from './sub1a';
 
-const SubPage = ( props ) => {
+class SubPage extends Component {
 
-    return (
-        <div>
-            <h2>LEVEL TWO : { props.theList[1] } </h2>
-            <input type="text" id="ipt_one" />
-            <input id="btn_one" type="button" value="Press" />
-            <SubSubPage XXX = { props.theList } />
-        </div>
-    );
+    constructor( props ) {
+        super( props );
+        this.state = {
+            theList: props.theList
+        };
+    };
+
+    render() {
+        return (
+            <div>
+                <h2>LEVEL TWO : { this.state.theList[1] } </h2>
+                <input type="text" id="ipt_one" />
+                <input id="btn_one" type="button" value="Press" onClick = { e => this.clickIt( e ) } />
+                <SubSubPage XXX = { this.state.theList } />
+            </div>
+        );
+    };
+
+    clickIt( e ) {
+
+        console.log( 'clicked' );
+    };
 };
 
 export default SubPage;
