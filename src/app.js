@@ -12,7 +12,6 @@ class APP extends Component {
             list: [ 'un', 'deux', 'trois' ],
             theTxt: 'ssss'
         };
-        // this.myFunc( this );
     };
 
     render() {
