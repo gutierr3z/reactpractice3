@@ -23,8 +23,8 @@ class SubPage extends Component {
     };
 
     clickIt( e ) {
-
-        console.log( 'clicked' );
+        var val = document.querySelector( '#ipt_one' ).value;
+        console.log( 'clicked', val );
     };
 };
 
