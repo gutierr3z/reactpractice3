@@ -15,18 +15,6 @@ class APP extends Component {
         // this.myFunc( this );
     };
 
-    myFunc() {
-        // var echoIt = document.querySelector( '#thetext' );
-        // echoIt.value = 'hello';
-        // this.setState( { theTxt: x } );
-        // var that = x;
-
-        // return function() {
-            // document.querySelector( '#thetext' ).innerHTML = 'asdfasdf';
-            // console.log( 'clicked', that );
-        // };
-    };
-
     render() {
         return (
             <div>
