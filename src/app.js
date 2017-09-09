@@ -10,7 +10,7 @@ class APP extends Component {
         super( props );
         this.state = {
             list: [ 'un', 'deux', 'trois' ],
-            theTxt: ''
+            theTxt: 'ssss'
         };
     };
 
@@ -24,13 +24,13 @@ class APP extends Component {
     render() {
         
         // this.setState( { theTxt: 'hello' } );
-        console.log( this.state.theTxt );
+        // console.log( this.state.theTxt );
         return (
             <div>
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
                 <div id="test">X</div>
                 <SubPage theList = { this.state.list } theFunc = { this.theFunc } />
-                <SubPage2 />
+                <SubPage2 theTxt = { this.state.theTxt } />
             </div>
         );
     };
