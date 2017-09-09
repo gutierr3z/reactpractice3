@@ -24,7 +24,8 @@ class SubPage extends Component {
     };
 
     clickIt( e ) {
-        this.state.theFunc();
+        var val = document.querySelector( '#ipt_one' ).value || 'empty';
+        this.state.theFunc( val );
     };
 };
 

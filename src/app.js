@@ -14,8 +14,8 @@ class APP extends Component {
     };
 
     theFunc( x ) {
-        var val = document.querySelector( '#ipt_one' ).value || 'empty';
-        console.log( 'clicked', val );
+        document.querySelector( '#thetext' ).value = x;
+        console.log( 'clicked', x );
     };
 
     render() {
