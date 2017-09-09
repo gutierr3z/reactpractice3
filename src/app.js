@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-//- - - - - - - - - - - - - - - - - - - - - - - - - 
+//--------------------------------------------------
 import SubPage from './Components/sub1';
 import SubPage2 from './Components/sub2';
 //==================================================
@@ -17,9 +17,9 @@ class APP extends Component {
     render() {
         return (
             <div>
-                <h1>LEVEL ONE : {this.state.list[0]}</h1>
-                <SubPage proList={this.state.list} />
-                <SubPage2 />
+                <h1>LEVEL ONE : { this.state.list[0] }</h1>
+                <SubPage proList = { this.state.list } />
+                <SubPage2 proList = { this.state.list } />
             </div>
         );
     };
