@@ -17,7 +17,7 @@ class APP extends Component {
     render() {
 
         return (
-            <div>
+            <div className="level1">
                 <h1>PLANTS</h1>
                 <SubPage list = { this.state.list } />
             </div>

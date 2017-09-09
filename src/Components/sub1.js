@@ -4,7 +4,7 @@ import SubSubPage from './sub1a';
 const SubPage = ( props ) => {
 
     return (
-        <div>
+        <div className="level2">
             <h2>SUBPAGE { props.list[1] }</h2>
             <SubSubPage selectedItem = { props.list[0] } />
         </div>
