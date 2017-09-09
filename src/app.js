@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import SubPage from './Components/sub1';
+import SubPage2 from './Components/sub2';
 
 class APP extends Component {
 
@@ -17,6 +18,7 @@ class APP extends Component {
             <div>
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
                 <SubPage theList = { this.state.list } />
+                <SubPage2 />
             </div>
         );
     };
