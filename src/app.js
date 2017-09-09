@@ -30,7 +30,7 @@ class APP extends Component {
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
                 <div id="test">X</div>
                 <SubPage theList = { this.state.list } theFunc = { this.theFunc } />
-                <SubPage2 theTxt = { this.state.theTxt } />
+                <SubPage2 onTheTxtChange = { theTxt => this.setState( { theTxt : theTxt } ) } />
             </div>
         );
     };

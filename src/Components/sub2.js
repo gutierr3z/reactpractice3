@@ -6,7 +6,7 @@ const SubPage2 = ( props ) => {
         
         <div id="sub2txt">
             <h2>LEVEL TWO SUB2</h2>
-            <p id="thetext">theTxt: { props.theTxt }</p>
+            <p id="thetext">theTxt: { props.onTheTxtChange() }</p>
         </div>
     );
 };
