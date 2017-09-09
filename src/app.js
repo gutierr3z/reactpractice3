@@ -9,12 +9,15 @@ class APP extends Component {
     constructor( props ) {
         super( props );
         this.state = {
-            list: [ 'un', 'deux', 'trois' ]
+            list: [ 'un', 'deux', 'trois' ],
+            theTxt: ''
         };
     };
 
     theFunc( x ) {
-        document.querySelector( '#thetext' ).value = x;
+        // var echoIt = document.querySelector( '#thetext' );
+        // echoIt.value = 'hello';
+        this.setState( { theTxt: x } );
         console.log( 'clicked', x );
     };
 
@@ -24,7 +27,7 @@ class APP extends Component {
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
                 <div id="test">X</div>
                 <SubPage theList = { this.state.list } theFunc = { this.theFunc } />
-                <SubPage2 />
+                <SubPage2 theVal = { this.state.theTxt } />
             </div>
         );
     };
