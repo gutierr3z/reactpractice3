@@ -8,13 +8,14 @@ class SubPage extends Component {
         super( props );
         this.state = {
             theList: props.proList,
-            theTxt: ''
+            theTxt: 'ass'
         };
 
         this.theFunc = this.theFunc.bind( this );
     };
 
     theFunc() {
+    // theFunc = () => {
 
         this.setState({
             theTxt: 'hello there'
