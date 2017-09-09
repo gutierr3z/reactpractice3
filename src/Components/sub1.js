@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SubSubPage from './sub1a';
-
+//--------------------------------------------------
 class SubPage extends Component {
 
     constructor( props ) {
@@ -27,5 +27,5 @@ class SubPage extends Component {
         document.querySelector( '#thetext' ).innerHTML = val;
     };
 };
-
+//--------------------------------------------------
 export default SubPage;

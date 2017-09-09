@@ -1,5 +1,5 @@
 import React from 'react';
-
+//--------------------------------------------------
 const SubPage2 = ( props ) => {
 
     return (
@@ -11,5 +11,5 @@ const SubPage2 = ( props ) => {
         </div>
     );
 };
-
+//--------------------------------------------------
 export default SubPage2;
