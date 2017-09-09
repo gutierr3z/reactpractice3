@@ -13,12 +13,17 @@ class APP extends Component {
         };
     };
 
+    theFunc( x ) {
+        var val = document.querySelector( '#ipt_one' ).value || 'empty';
+        console.log( 'clicked', val );
+    };
+
     render() {
         return (
             <div>
                 <h1>LEVEL ONE : { this.state.list[0] }</h1>
                 <div id="test">X</div>
-                <SubPage theList = { this.state.list } />
+                <SubPage theList = { this.state.list } theFunc = { this.theFunc } />
                 <SubPage2 />
             </div>
         );

@@ -7,7 +7,8 @@ class SubPage extends Component {
     constructor( props ) {
         super( props );
         this.state = {
-            theList: props.theList
+            theList: props.theList,
+            theFunc: props.theFunc
         };
     };
 
@@ -23,8 +24,7 @@ class SubPage extends Component {
     };
 
     clickIt( e ) {
-        var val = document.querySelector( '#ipt_one' ).value;
-        console.log( 'clicked', val );
+        this.state.theFunc();
     };
 };
 
