@@ -1,9 +1,14 @@
 import React from 'react';
 
+import SubSubPage from './sub1a';
+
 const SubPage = ( props ) => {
 
     return (
-        <h2>LEVEL TWO : { props.theList[1] } </h2>
+        <div>
+            <h2>LEVEL TWO : { props.theList[1] } </h2>
+            <SubSubPage XXX = { props.theList } />
+        </div>
     );
 };
 
